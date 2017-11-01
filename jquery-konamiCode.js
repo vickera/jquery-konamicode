@@ -1,15 +1,8 @@
 $.fn.konamiCode = function(first, second){
-  var callback
-  var code = [38,38,40,40,37,39,37,39,66,65,13]
+  var callback = second ? second : first
+  var code = second ? first : [38,38,40,40,37,39,37,39,66,65,13]
   var currentPosition = 0
 
-  if(!second){
-    callback = first
-  } else {
-    code = first
-    callback = second
-  }
-  
   this.get(0).addEventListener('keydown', function(e) {
     var targetKey = code[currentPosition]
     
