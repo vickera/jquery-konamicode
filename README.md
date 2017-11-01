@@ -1,7 +1,8 @@
 # jquery-konamicode
-A jQuery plugin to make Easter eggs easy to implement. Just include the code above where you want to use it. 
+A jQuery plugin to make Easter eggs easy to implement.
 
-Simple example:
+Standard code: `up up down down left right left right B A enter`
+Standard example:
 ```
 $('body').konamiCode(function(){  
   alert('Thats all there is to it!')
